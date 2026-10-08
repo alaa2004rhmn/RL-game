@@ -1,0 +1,32 @@
+[project]
+name = "rl-game"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "alaappt", email = "a_chettab@estin.dz" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "gymnasium>=1.4.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.4.6",
+    "pandas>=3.0.6",
+    "pygame>=2.6.1",
+    "stable-baselines3>=2.9.0",
+    "tensorboard>=2.21.0",
+    "torch>=2.14.1",
+]
+
+[project.scripts]
+rl-game = "rl_game:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+]
